@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Duma&#39;s website</title>
+    <link>http://www.duma.website/categories/</link>
+    <description>Recent content in Categories on Duma&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.duma.website/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Suggestions</title>
+      <link>http://www.duma.website/categories/suggestions/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.duma.website/categories/suggestions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thoughts</title>
+      <link>http://www.duma.website/categories/thoughts/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.duma.website/categories/thoughts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

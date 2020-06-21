@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Duma&#39;s website</title>
+    <link>http://www.duma.website/</link>
+    <description>Recent content on Duma&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.duma.website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cleaning up form UI</title>
+      <link>http://www.duma.website/posts/cleaning_up_form_ui/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.duma.website/posts/cleaning_up_form_ui/</guid>
+      <description>This is an article written by Tonsky about polishing UIs.  He starts from an (honestly already good) UI taken from IntelliJ IDEA and with some simple techniques he makes it even better. The most prominent technique is overlapping the UI with a grid to show the little imperfections present.  This simple technique can spot imbalances in many interfaces and doesn&#39;t require much effort. While not all the adjustments he made are wise if used in a web/responsive context, most of them are.</description>
+    </item>
+    
+    <item>
+      <title>Helvetica movie</title>
+      <link>http://www.duma.website/posts/helvetica_movie/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.duma.website/posts/helvetica_movie/</guid>
+      <description>Directed by Gary Hustwit, released in 2007, watched by me last week.  The documentary is pleasant and includes a lot of interviews that are useful ever for who is just superficially interested in typography - like me.  The most interesting part, in my opinion, is where the different phases of typography&#39;s evolution are abstracted into specific categories - modernism, &#34;grunge typography&#34;, neo modernism... and so on. I&#39;ve never thought about it in this way but, once these terms are described by the interviews, they help us to navigate in the sea of different fonts and styles around us.</description>
+    </item>
+    
+    <item>
+      <title>Powerhouse Company website</title>
+      <link>http://www.duma.website/posts/powerhouse_company/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.duma.website/posts/powerhouse_company/</guid>
+      <description>Usually, I don&#39;t like sites promoted by Awwwards.
+I often expect to be mesmerized by the beautiful effects and the non-ordinary interactivity and I end up finding them slow and counterintuitive.  Powerhouse company is an exception.  Awwwards &#34;Site of the month&#34; in April 2020, it expresses a rare balance between graphic effects and intuitiveness.  The Awwwards article says many things, I&#39;ll add here only a few points:  the effects&#39; parameters must be well-tuned, resulting in a smooth experience, fluid and not cumbersome; its system of navigation is unorthodox but intuitive, making the site exploration funny;  the site is built around content, instead of focusing on graphic effects.</description>
+    </item>
+    
+    <item>
+      <title>Maybe it&#39;s not technology</title>
+      <link>http://www.duma.website/posts/maybe_its_not_technology/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.duma.website/posts/maybe_its_not_technology/</guid>
+      <description>Wrong direction I had the opportunity to work for many small and medium companies.
+Most of them weren&amp;rsquo;t software house. Most of them weren&amp;rsquo;t up to date with all the technologies of javascript&amp;rsquo;s world. Typescript, Angular, and React were like echoes of distant mermaids: attractive yet too far to make the boat change direction.
+I think that, startups excluded, most companies still fall under this description today. Their softwares are &amp;ldquo;old&amp;rdquo; web application written in javascript v5, jQuery and, God forbid, Bootstrap 3.</description>
+    </item>
+    
+  </channel>
+</rss>

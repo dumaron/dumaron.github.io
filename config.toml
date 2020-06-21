@@ -1,0 +1,4 @@
+baseURL = "http://www.duma.website/"
+languageCode = "en-us"
+title = "Duma's website"
+theme = ["blank"]
