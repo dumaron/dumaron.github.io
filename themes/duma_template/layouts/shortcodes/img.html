@@ -1,0 +1,7 @@
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+{{ $tinyw := default "1000x" }}
+{{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+{{ $tiny := .Scratch.Get "tiny" }}
+
+<img src="{{ $tiny.RelPermalink }}" 
+  {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }} />
