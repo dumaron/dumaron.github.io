@@ -28,11 +28,6 @@
 	{{ partial "header" . }}
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer" . }}
-	<script type="module" src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
-	<script type="text/js">
-		var e = document.querySelector('article strong');
-		var annotation = annotate(e, { type: 'underline' });
-		annotation.show();
-	</script>
+	<!--script src="/assets/bundle.js"></script-->
 </body>
 </html>
