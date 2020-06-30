@@ -3,6 +3,7 @@
 body {
   background-color: #ffcdac;
   font-weight: 300;
+  font-family: 'Liberation Serif', serif;
 }
 
 body > header,
@@ -67,9 +68,12 @@ article {
 }
 
 article  {
-  font-family: 'Liberation Serif', serif;
   text-align: left;
   font-size: 1.1rem;
+}
+
+article .content p {
+  text-align: justify;
 }
 
 article > div.content > p:first-of-type > img {
