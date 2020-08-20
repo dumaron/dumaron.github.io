@@ -1,4 +1,4 @@
-import { annotate } from 'rough-notation';
+/*import { annotate } from 'rough-notation';
 
 setTimeout(() => {
     const ems = document.querySelectorAll('strong, em');
@@ -30,4 +30,4 @@ setTimeout(() => {
          });
         annotation.show();
     })
-}, 1000);
+}, 1000);*/

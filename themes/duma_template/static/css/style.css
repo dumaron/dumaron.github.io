@@ -1,9 +1,10 @@
 
 
 body {
-  background-color: #ffcdac;
+  background-color: #fdd0b0;
   font-weight: 300;
   font-family: 'Liberation Serif', serif;
+  margin: 0;
 }
 
 body > header,
@@ -12,6 +13,7 @@ body > footer,
 div.with-sidebar {
   max-width: 1100px;
   margin: auto;
+  padding: 0 .7rem;
 }
 
 a, a:visited {
@@ -65,6 +67,10 @@ time {
 
 article {
   margin-top: 3rem;
+}
+
+article:first-of-type {
+  margin-top: 0;
 }
 
 article  {
@@ -126,9 +132,20 @@ img {
 }
 
 header {
+  margin-bottom: 2rem !important;
+}
+
+header > #real-header {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#fake-border {
+  border-bottom: 1px solid #333;
+  width: 100%;
 }
 
 #title {
