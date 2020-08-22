@@ -19,7 +19,7 @@ It was a pleasing encounter on my path of learning about modernism. The church i
 
 There's also [a documentary about the church](https://vimeo.com/ondemand/aaltoriolaen), but it actually talks more about the story of the building than its philosophy and technical details. If you're not interested in the wars inside the Italian church probably you can just skip it.
 
-I didn't know Aalto. I've made a little research and its point of view seems intriguing: although a modernist, instead of focusing only on rationalism he advocates for more attention about humans and psychological elements. That's a position that I strongly agree with.
+I didn't know Aalto. I've made a little research and his point of view seems intriguing: although a modernist, instead of focusing only on rationalism he advocates for more attention about humans and psychological elements. That's a position that I strongly agree with.
 
 That's just a superficial research anyway. I hope to learn more about him in the future.
 
