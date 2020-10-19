@@ -17,7 +17,7 @@ images:
 
 Today [an interesting discussion appeared on HackerNews](https://news.ycombinator.com/item?id=24541964). Everything stared from [a message on Github](https://github.com/docker/cli/issues/267#issuecomment-695149477) about an ex developer, [Eric Diven](https://www.longwalkwoodworking.com/), who left his job to become a carpenter. As he said, "The hours are long, the pay sucks, and there's always the opportunity to remove my finger with a table saw, but nobody asks me if I can add an RSS feed to a DBMS, so there's that :-)".
 
-Leaving aside this individual example, the discussion on HN received a lot of attention and many messages are aligned with Eric's one. I think that it's possible to draw a sense of frustration among this sector of workers. Of course many disagree with this perception, sustaining that the ones who complain nowadays are just privileged kids facing a hard truth.
+Leaving aside this individual example, the discussion on HN received a lot of attention and many messages are aligned with Eric's one. I think it's possible to draw a sense of frustration among this sector of workers. Of course many disagree with this perception, sustaining that the ones who complain nowadays are just privileged kids facing a hard truth.
 
 Even though I don't have a complete opinion about, I think I find myself in the middle. Somehow developers in the last years have considered themselves different from other workers; they believed to the mirage of a life outside of the market laws, where all of them would have benefited from a high salary and an intellectually stimulating job. Finding out that most of us are just stressed employees like many other workers is of course a cold shower.
 
