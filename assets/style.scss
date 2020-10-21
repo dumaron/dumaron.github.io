@@ -167,3 +167,19 @@ header nav li {
 header nav li a {
   margin-left: 1em;
 }
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: .7em;
+  font-family: sans-serif;
+  color: #777;
+  text-align: right;
+}
+
+figcaption a {
+  color: #777;
+  /*text-decoration: none !important;*/
+}

@@ -3,5 +3,10 @@
 {{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
 {{ $tiny := .Scratch.Get "tiny" }}
 
-<img src="{{ $tiny.RelPermalink }}" 
-  {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }} />
+<figure>
+  <img 
+    src="{{ $tiny.RelPermalink }}" 
+    {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }} 
+  />
+  {{ with .Get "caption"}}<figcaption>{{ . | safeHTML }}</figcaption>{{ end }}
+</figure>

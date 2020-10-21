@@ -25,14 +25,14 @@ At the same time I think that the world of software production is evolving rapid
 
 One last thing: Eric left [a personal message on the HN discussion](https://news.ycombinator.com/item?id=24542600) which I believe is very important for his current life; just be sure to read it :) .
 
-HackerNews discussion:
+HackerNews discussion:  
 [https://news.ycombinator.com/item?id=24541964](https://news.ycombinator.com/item?id=24541964)
 
-Eric's message on the Github issue:
+Eric's message on the Github issue:  
 [https://github.com/docker/cli/issues/267#issuecomment-695149477](https://github.com/docker/cli/issues/267#issuecomment-695149477)
 
-Eric Diven website:
+Eric Diven website:  
 [https://www.longwalkwoodworking.com/](https://www.longwalkwoodworking.com/)
 
-Eric message on the HN discussion:
+Eric message on the HN discussion:  
 [https://news.ycombinator.com/item?id=24542600](https://news.ycombinator.com/item?id=24542600)
