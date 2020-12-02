@@ -6,15 +6,17 @@ draft: false
 categories: 
 - Thoughts
 images: 
-- building2.jpg
-
+- sidebar.jpg
+sidebar:
+  image: sidebar.jpg
+  alt: "Old photo of an assembly line"
 ---
 
 {{<
   img
-  src="building2.jpg"
+  src="workers.jpg"
   alt="Old photo of an assembly line"
-  caption=`Photo by <a href="https://unsplash.com/@museumsvictoria?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Museums Victoria</a> on <a href="https://unsplash.com/s/photos/assembly-line?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`
+  caption=`Photo by <a target="_blank" href="https://unsplash.com/@museumsvictoria?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Museums Victoria</a> on <a href="https://unsplash.com/s/photos/assembly-line?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`
 >}}
 
 Recently I've thought a lot about consumerism and how we produce software today. I've tried many times bring order to my thoughts, but doubts and not enough free time are preventing me to find a position that I'm satisfied with. I have decided to release this text prematurely to use it as a foundation for discussion, in the hope that my ideas get sorted.

@@ -1,8 +1,12 @@
 <aside>
-	<div>
-		<div>
-			<h3>LATEST POSTS</h3>
-		</div>
+		<h3>LAST FEATURED</h3>
+		{{ range first 1 .Site.Taxonomies.categories.thoughts }}
+			{{ $img := printf "%s%s" .Permalink .Params.sidebar.image }}
+			<a class="featured" href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<img src="{{ $img | absURL }}" alt="{{ .Params.sidebar.alt }}"/>
+		{{ end }}
+
+		<h3>LATEST POSTS</h3>
 		<div>
 			<ul>
 				{{ range first 50 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
@@ -10,5 +14,4 @@
 				{{ end }}
 			</ul>
 		</div>
-	</div>
 </aside>

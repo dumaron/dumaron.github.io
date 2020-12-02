@@ -2,17 +2,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="cache-control" content="no-cache" />
-
-
+<base href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" /> 
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:type" content="website">
+<meta name=”twitter:card” content=”summary_large_image”>
+<meta name="twitter:creator" content="@Duma_ron" />
 {{ $title := (or .Title .Site.Title) }}
 <meta name="title" content="{{ $title }}">
 <meta property="og:title" content="{{ $title }}">
 <meta name="twitter:title" content="{{ $title }}" />
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:creator" content="@Duma_ron" />
-
-
 {{ $description := (or .Description .Summary .Site.Params.description) }}
 {{ with $description }}
     <meta name="description" content="{{ $description }}" />
@@ -21,23 +22,17 @@
 {{ end }}
 
 
-<base href="{{ .Permalink }}">
-<link rel="canonical" href="{{ .Permalink }}" itemprop="url" /> 
-<meta name="url" content="{{ .Permalink }}" />
-<meta name="twitter:url" content="{{ .Permalink }}" /> 
-<meta property="og:url" content="{{ .Permalink }}" />
-
 
 <meta property="og:locale" content="en">
 <meta name="language" content="english">
 
-
 {{ $baseurl := .Permalink }}
+
 {{ with .Params.images }}
-{{ range first 1 . }}
-{{ $img := printf "%s%s" $baseurl . }}
-<meta itemprop="image" content="{{ $img | absURL }}" />
-<meta property="og:image" content="{{ $img | absURL }}" /> 
-<meta name="twitter:image" content="{{ $img | absURL }}" />
-{{ end }}
+    {{ range first 1 . }}
+        {{ $img := printf "%s%s" $baseurl . }}
+        <meta itemprop="image" content="{{ $img | absURL }}" />
+        <meta property="og:image" content="{{ $img | absURL }}" /> 
+        <meta name="twitter:image" content="{{ $img | absURL }}" />
+    {{ end }}
 {{ end }}
