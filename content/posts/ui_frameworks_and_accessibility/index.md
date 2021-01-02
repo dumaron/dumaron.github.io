@@ -13,10 +13,10 @@ images:
   img
   src="stairs.jpg"
   alt="Concrete stais photo in black and white"
-  caption=`Photo by <a target="_blank" href="https://unsplash.com/@artisanalphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ArtisanalPhoto</a> on <a target="_blank" href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>`
+  caption=`Photo by <a target="_blank" rel="noopener" href="https://unsplash.com/@artisanalphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">ArtisanalPhoto</a> on <a target="_blank" rel="noopener"  href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>`
 >}}
 
-I've been a frontend developer for years but, honestly, I don't know anything about web accessibility. That's because of my past jobs: to spend time and money to make our product more accessible has never been an option, so I've never learned about it. To be honest, it wasn't my employers/client's fault too: often accessibility is considered a luxury more than an expression of civilization.
+I've been a frontend developer for years but, honestly, I know nothing about web accessibility. That's because of my past jobs: to spend time and money to make our product more accessible has never been an option, so I've never learned about it. To be honest, it wasn't my employers/client's fault too: often accessibility is considered a luxury more than an expression of civilization.
 
 On the other hand, I'm a big advocate of UI frameworks: they allow me to draw from other developers' work (and experience) and let me contribute to this collective effort, instead of "reinventing the wheel". UI frameworks have many advantages over tailor-made solutions:
 

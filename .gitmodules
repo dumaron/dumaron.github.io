@@ -1,9 +1,0 @@
-[submodule "themes/novela"]
-	path = themes/novela
-	url = https://github.com/forestryio/hugo-theme-novela.git
-[submodule "themes/blank"]
-	path = themes/blank
-	url = https://github.com/vimux/blank.git
-[submodule "themes/hugo-video"]
-	path = themes/hugo-video
-	url = https://github.com/martignoni/hugo-video.git
