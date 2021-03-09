@@ -32,6 +32,8 @@ I absolutely don’t want to sound nihilistic; I want to correct the narrative u
 But that’s another story. Before I finish, I want also to suggest you to check out [Mark Hurst](https://twitter.com/markhurst). I didn’t know him before his article came out, but I really like his point of view about technology. If I had to suggest a few things above others, I really like his article [A simple tech ethic](https://creativegood.com/blog/20/a-simple-tech-ethic.html). Also one of his books, [Customer included](https://customersincluded.com/), seems to be a text worth reading if you care about your users. But who am I kidding? I need to finish too many books to buy another one.
 
 
+## Links
+
 Why I’m losing faith in UX:
 : [https://creativegood.com/blog/21/losing-faith-in-ux.html](https://creativegood.com/blog/21/losing-faith-in-ux.html)
 

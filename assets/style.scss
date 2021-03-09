@@ -1,7 +1,7 @@
 @import './fonts';
 
 $main_column_width: 500px;
-$main_margin: 2rem;
+$main_margin: 20px;
 $sidebar_min_width: 300px;
 $background_color: #f2f2fa;
 
@@ -30,7 +30,7 @@ $background_color: #f2f2fa;
   min-width: calc(#{$main_column_width} - #{$main_margin});
 }
 
-/*@media screen and (max-width: 800px) {
+@media screen and (max-width: 540px) {
   .with-sidebar > * {
     flex-direction: row;
 
@@ -38,7 +38,7 @@ $background_color: #f2f2fa;
       min-width: unset;
     }
   }
-}*/
+}
 
 // SIDEBAR ---------------------------------------------------------------------------------------
 
