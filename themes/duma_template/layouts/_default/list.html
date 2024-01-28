@@ -1,4 +1,6 @@
 {{ define "main" }}
+<div class="with-sidebar">
+  <div>
 	<main>
 		{{ if or .Title .Content }}
 		<div>
@@ -12,5 +14,7 @@
 		{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>
-{{ partial "sidebar.html" . }}
+		{{ partial "sidebar.html" . }}
+	</div>
+</div>
 {{ end }}
