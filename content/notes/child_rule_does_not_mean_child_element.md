@@ -8,6 +8,7 @@ categories:
 tags:
 - CSS
 - frontend
+- TIL
 ---
 
 I always tought that, either in SASS or in native CSS nested selector, it was possible only to refine a selector by appending attributes of child nodes. It turns out it isn't so.
@@ -22,10 +23,7 @@ This is a partial example to show the mechanism: the haiku is green, while I wou
     <style>
         main {
             color: blue;
-
-            body & {
-                color: green;
-            }
+            body & { color: green; }
         }
     </style>
 </head>

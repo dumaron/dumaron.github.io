@@ -4,3 +4,4 @@ public/
 resources/
 .sass-cache/
 /.quarto/
+**/.DS_Store
