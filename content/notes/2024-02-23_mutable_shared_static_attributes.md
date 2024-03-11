@@ -1,8 +1,8 @@
 ---
-title: "Mutable shared static attributes in Javascript"
+title: "Mutable <code>shared static</code> attributes in Javascript"
 alias: "mutable-shared-static-attributes"
-date: 2024-02-23
-publishdate: 2024-02-23
+date: 2024-03-11
+publishdate: 2024-03-11
 draft: false
 categories: 
 - Notes
@@ -77,5 +77,32 @@ console.log(instance2.someMethod()) // <-- but also for other instances of the s
 
 This is a way to obtain an encapsulated common ground among all the instances of a class. 
 
-I think it's a trick it might be useful to know, but I don't like that: I consider this somewhat "dirty" as static methods should be used only for a class utils or different kind of constructors (like `.fromEntries()`). But nice to know.   
+I think it's a trick it might be useful to know, but I don't like that: I consider this somewhat "dirty" as static methods should be used only for a class utils or different kind of constructors (like `.fromEntries()`).
 
+Now, to be honest, this is no different than having a variable in the same file of the class, with the exception that the variable is placed inside the class. However, there is an additional trick that can make this more elegant: [private properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties).
+
+One cool thing that I discovered on private properties is that, if the property is also `static`, it can be accessed from an instance of the class itself. Let's see some code:
+```js
+class MyClass3 {
+    static #cached =  null
+
+    someMethod() {
+        if (MyClass3.#cached === null) { // <-- see how the static method can be accessed, even though
+                                         //     technically accesses another object variable
+            console.log('doing some expensive computation...') 
+            MyClass3.#cached = 42
+        }
+        return MyClass3.#cached
+    } 
+}
+
+const instance3 = new MyClass3()
+console.log(instance3.someMethod()) // <-- doing expensive computation only first time for same class
+console.log(instance3.someMethod())
+console.log(MyClass3.cached) // undefined
+console.log(MyClass3.#cached) // SyntaxError: Private field '#cached' must be declared in an enclosing class
+```
+
+You can see how using `#` and `static` together we can achieve a shared - and yet encapsulated - common ground among all the instances of a class.
+
+Now, again, to be honest, I would greatly prefer to have a non-exported variable next to the class definition; the end result would be more or less the same, but the code would be simpler. However, it's nice to know this can be achieved this way too.
