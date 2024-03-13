@@ -1,20 +1,23 @@
 {{ define "main" }}
-<div class="with-sidebar">
-  <div>
-	<main>
-		{{ if or .Title .Content }}
-		<div>
-			{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
-			{{ with .Content }}<div>{{ . }}</div>{{ end }}
-		</div>
-		{{ end }}
-
-		{{ range .Paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main>
-		{{ partial "sidebar.html" . }}
+<main>
+	{{ if or .Title .Content }}
+	<div>
+		{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+		{{ with .Content }}<div>{{ . }}</div>{{ end }}
 	</div>
-</div>
+	{{ end }}
+
+	<ul class="pages-list">
+	{{ range .Paginator.Pages }}
+		<li>
+			<time>{{ time.Format "2006-01-02" .PublishDate }}</time>
+			<a href="{{.RelPermalink}}">{{ .Title | safeHTML  }}</a>
+		</li>
+	{{ end }}
+	</ul>
+	{{ partial "pagination.html" . }}
+</main>
+<aside>
+	{{ partial "sidebar.html" . }}
+</aside>
 {{ end }}

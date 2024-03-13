@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
-	<title>{{ .Title }}</title>
+	<title>{{ .Title | safeHTML }}</title>
 	{{ partial "meta" . }}
-	{{ $style := resources.Get "style.scss" | toCSS | minify | fingerprint }}
+	{{ $style := resources.Get "style-v2.css" }}
 	<link rel="stylesheet" href="{{ $style.Permalink }}">
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30975019-3"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-30975019-3');
-	</script>
-
 </head>
 <body>
 	{{ partial "header" . }}

@@ -1,5 +1,5 @@
 ---
-title: ":has() pseudo-selector and current node parent"
+title: "<code>:has()</code> pseudo-selector and current node parent"
 date: 2024-02-02
 publishdate: 2024-02-02
 draft: false

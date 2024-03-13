@@ -1,0 +1,226 @@
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url(../fonts/IBMPlexSans-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+ }
+ 
+ @font-face {
+    font-family: "IBM Plex Sans";
+    src: url(../fonts/IBMPlexSans-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+ }
+
+ @font-face {
+    font-family: "IBM Plex Sans";
+    src: url(../fonts/IBMPlexSans-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+ }
+ 
+ @font-face {
+    font-family: "IBM Plex Sans";
+    src: url(../fonts/IBMPlexSans-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+ }
+
+ @font-face {
+    font-family: "IBM Plex Sans";
+    src: url(../fonts/IBMPlexSans-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+ }
+ 
+ @font-face {
+    font-family: "IBM Plex Sans";
+    src: url(../fonts/IBMPlexSans-BoldItalic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+ }
+
+:root {
+    --primary-color: #D45151;
+    --background-color: #f2f2fa;
+    --text-color: #333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 15px;
+
+    font-family: "IBM Plex Sans", sans-serif;
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: minmax(300px, auto), minmax(200px, auto);
+    grid-template-areas:
+      "header  header"
+      "content sidebar"
+      "footer  footer";
+
+      @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "content" "sidebar" "footer";
+      }
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: .5rem;
+
+    nav > ul {
+        padding-left: 1rem;
+        list-style: none;
+        display: flex;  
+        gap: 1rem;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 1.rem;
+            }
+        }
+
+        &::before {
+            content: "/";
+        }
+    }
+}
+
+main {
+    grid-area: content;
+    max-width: 800px;
+    width: 800px;
+    line-height: 23px;
+
+
+    figure, img {
+        max-width: 100%;
+    }
+
+    ul.tags {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+aside {
+    grid-area: sidebar;
+    max-width: 300px;
+
+    @media screen and (max-width: 800px) {
+        max-width: unset;
+    }
+
+    ul {
+        padding-left: 1rem;
+    }
+
+    .section-title {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Links */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+main h1 a {
+    text-decoration: none;
+    &:hover {
+        color: var(--text-color)
+    }
+}
+
+main a {
+    text-decoration: underline;
+    font-weight: bold;
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
+time {
+    display: inline-block;
+    color: #404044;
+    font-size: 12px;
+    margin: 0 3px;
+    padding: 0 3px;
+    background-color: #f0f0f2;
+    border-radius: 3px;;
+}
+
+figure {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+code, time {
+    border-radius: 3px;
+    font-family: "Berkeley Mono", "IBM Plex Mono", monospace;
+}
+
+time {
+    color: #333;
+    padding: 0 3px; 
+    background-color: var(--background-color);
+}
+
+code {
+    padding: 0 .2em;
+    color: #111;
+    background-color: #fff;
+}
+
+#title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.highlight {
+    pre {
+        padding: 1rem;
+        overflow-x: auto;
+        font-size: 15px;
+    }
+    code {
+        padding: 0;
+        border-radius: unset;
+        background-color: unset;
+        color: unset;
+    }
+}
