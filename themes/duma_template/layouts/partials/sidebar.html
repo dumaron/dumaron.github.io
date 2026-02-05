@@ -1,18 +1,16 @@
-<aside>
-	<div class="section-title">LATEST POSTS</div>
-	<ul>
-		{{ range first 10 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-		<li>
-			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-		</li>
-		{{ end }}
-	</ul>
-	<div class="section-title">LATEST NOTES/TILs</div>
-	<ul>
-		{{ range first 20 (where .Site.RegularPages "Type" "notes") }}
-		<li>
-			<a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a>
-		</li>
-		{{ end }}
-	</ul>
-</aside>
+<div class="section-title">LATEST POSTS</div>
+<ul>
+	{{ range first 10 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+	<li>
+		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+	</li>
+	{{ end }}
+</ul>
+<div class="section-title">LATEST NOTES/TILs</div>
+<ul>
+	{{ range first 20 (where .Site.RegularPages "Type" "notes") }}
+	<li>
+		<a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a>
+	</li>
+	{{ end }}
+</ul>

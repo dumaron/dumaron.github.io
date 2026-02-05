@@ -10,7 +10,7 @@
 	<ul class="pages-list">
 	{{ range .Paginator.Pages }}
 		<li>
-			<time>{{ time.Format "2006-01-02" .PublishDate }}</time>
+			<time>{{ time.Format "02/01/2006" .PublishDate }}</time>
 			<a href="{{.RelPermalink}}">{{ .Title | safeHTML  }}</a>
 		</li>
 	{{ end }}

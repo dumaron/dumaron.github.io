@@ -19,7 +19,7 @@ During my vacation trip, I had the opportunity to see the only building made by 
 
 It was a pleasing encounter on my path of learning about modernism. The church is bright and it emanates order and simplicity. I think it uses some techniques employed in factories to create a more soft and uniform light diffusion, avoiding direct light.
 
-There's also [a documentary about the church](https://vimeo.com/ondemand/aaltoriolaen), but actually it talks more about the story of the building than about its philosophy and technical details. If you're not interested in the wars inside the Italian church probably you can just skip it.
+There's also [a documentary about the church](https://vimeo.com/ondemand/aaltoriolait), but actually it talks more about the story of the building than about its philosophy and technical details. If you're not interested in the wars inside the Italian church probably you can just skip it.
 
 I didn't know Aalto. I've made a little research and his point of view seems intriguing: although a modernist, instead of focusing only on rationalism he advocates for more attention about humans and psychological elements. That's a position that I strongly agree with.
 
@@ -32,4 +32,4 @@ Santa Maria Assunta church Wikipedia page:
 [https://en.wikipedia.org/wiki/Santa_Maria_Assunta,_Riola_di_Vergato](https://en.wikipedia.org/wiki/Santa_Maria_Assunta,_Riola_di_Vergato)
 
 We do not thirst after scenography - documentary about the church's story:  
-[https://vimeo.com/ondemand/aaltoriolaen](https://vimeo.com/ondemand/aaltoriolaen)
+[https://vimeo.com/ondemand/aaltoriolait](https://vimeo.com/ondemand/aaltoriolaen)

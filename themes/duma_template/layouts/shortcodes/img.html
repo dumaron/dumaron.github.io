@@ -1,7 +1,5 @@
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
-{{ $tinyw := default "1000x" }}
-{{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
-{{ $tiny := .Scratch.Get "tiny" }}
+{{ $tiny := $src.Resize "1000x" }}
 
 <figure>
   <img 

@@ -40,13 +40,13 @@
 <div class="video-container">
   <video autoplay loop muted playsinline>
   {{ with $video_webm }}
-    <source src="{{ .RelPermalink }}" type="video/webm" }}>
+    <source src="{{ .RelPermalink }}" type="video/webm">
   {{ end }}
   {{ with $video_ogg }}
-    <source src="{{ .RelPermalink }}" type="video/ogg" }}>
+    <source src="{{ .RelPermalink }}" type="video/ogg">
   {{ end }}
   {{ with $video_mp4 }}
-    <source src="{{ .RelPermalink }}" type="video/mp4" }}>
+    <source src="{{ .RelPermalink }}" type="video/mp4">
   {{ end }}
     </video>
     </div>

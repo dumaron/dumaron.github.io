@@ -85,7 +85,7 @@ header {
             display: inline-block;
 
             a {
-                font-size: 1.rem;
+                font-size: 1rem;
             }
         }
 
@@ -98,7 +98,6 @@ header {
 main {
     grid-area: content;
     max-width: 800px;
-    width: 800px;
     line-height: 23px;
 
 
@@ -170,12 +169,11 @@ main a {
 
 time {
     display: inline-block;
-    color: #404044;
     font-size: 12px;
     margin: 0 3px;
     padding: 0 3px;
-    background-color: #f0f0f2;
-    border-radius: 3px;;
+    color: #333;
+    background-color: var(--background-color);
 }
 
 figure {
@@ -192,12 +190,6 @@ h1 {
 code, time {
     border-radius: 3px;
     font-family: "Berkeley Mono", "IBM Plex Mono", monospace;
-}
-
-time {
-    color: #333;
-    padding: 0 3px; 
-    background-color: var(--background-color);
 }
 
 code {
