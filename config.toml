@@ -8,6 +8,9 @@ enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 
+[params]
+  mainSections = ["posts"]
+
 [markup]
   [markup.highlight]
     anchorLineNos = false

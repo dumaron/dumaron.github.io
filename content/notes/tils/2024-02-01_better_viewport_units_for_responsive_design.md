@@ -3,6 +3,7 @@ title: "Better viewport units for responsive design"
 date: 2024-02-01
 publishdate: 2024-02-01
 draft: false
+alias: better_viewport_units_for_responsive_design
 categories: 
 - Notes
 tags:

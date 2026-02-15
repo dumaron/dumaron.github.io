@@ -2,6 +2,7 @@
 title: "Web Components innerHTML and loading time"
 date: 2024-01-30
 publishdate: 2024-01-30
+alias: "webc_innerhtml_and_loading_time"
 draft: false
 categories: 
 - Notes
