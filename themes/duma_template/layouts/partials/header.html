@@ -2,10 +2,10 @@
     <a href="{{ .Site.BaseURL }}" id="title">{{ .Site.Title }}</a>
     <nav>
       <ul>
-        <li><a href="/posts">Blog</a></li>
-        <li><a href="/notes">Notes</a></li>
-        <li><a href="/martin">Martin</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/posts" {{ if hasPrefix .RelPermalink "/posts/" }}class="active"{{ end }}>Blog</a></li>
+        <li><a href="/notes" {{ if hasPrefix .RelPermalink "/notes/" }}class="active"{{ end }}>Notes</a></li>
+        <li><a href="/martin" {{ if hasPrefix .RelPermalink "/martin/" }}class="active"{{ end }}>Martin</a></li>
+        <li><a href="/about" {{ if hasPrefix .RelPermalink "/about/" }}class="active"{{ end }}>About</a></li>
       </ul>
     </nav>
 </header>

@@ -1,21 +1,21 @@
 {{ define "main" }}
 <main>
-	{{ if or .Title .Content }}
-	<div>
-		{{ with .Title }}<h1>{{ . }}</h1>{{ end }}
-		{{ with .Content }}<div>{{ . }}</div>{{ end }}
-	</div>
-	{{ end }}
+	<h1>Blog</h1>
+	{{ with .Content }}<div>{{ . }}</div>{{ end }}
 
 	<ul class="pages-list">
-	{{ range .Paginator.Pages }}
+	{{ range .Pages }}
 		<li>
 			<time>{{ time.Format "02/01/2006" .PublishDate }}</time>
-			<a href="{{.RelPermalink}}">{{ .Title | safeHTML  }}</a>
+			<div>
+				{{ if .Params.featured }}<span style="color: #ff4136; font-size: 11px; vertical-align: text-bottom">&#11044;</span> {{ end }}<a href="{{.RelPermalink}}">{{ .Title | safeHTML  }}</a>
+				{{ with .Params.tags }}
+				<div class="list-tags">{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> {{ end }}</div>
+				{{ end }}
+			</div>
 		</li>
 	{{ end }}
 	</ul>
-	{{ partial "pagination.html" . }}
 </main>
 <aside>
 	{{ partial "sidebar.html" . }}

@@ -5,6 +5,8 @@ publishdate: 2023-09-18
 draft: false
 images:
 - funeraloftheanarchistgalli.jpg
+featured: true
+quick intro: "A look at the shifting Javascript landscape: React's grip is loosening, Bun and Deno challenge Node, and new frameworks compete to become the full-stack standard."
 ---
 
 {{<

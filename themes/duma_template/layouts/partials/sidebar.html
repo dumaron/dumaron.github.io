@@ -1,3 +1,20 @@
+{{ $featured := first 1 (where .Site.RegularPages.ByDate.Reverse "Params.featured" true) }}
+{{ range $featured }}
+{{ if ne .RelPermalink $.RelPermalink }}
+<div class="featured-post">
+    <div class="section-title">FEATURED</div>
+    <a href="{{ .RelPermalink }}">
+        {{ with .Resources.GetMatch (index .Params.images 0) }}
+        <img src="{{ .RelPermalink }}" alt="">
+        {{ end }}
+        <h3>{{ .Title }}</h3>
+    </a>
+    {{ with index .Params "quick intro" }}
+    <p>{{ . }}</p>
+    {{ end }}
+</div>
+{{ end }}
+{{ end }}
 <div class="section-title">LATEST POSTS</div>
 <ul>
 	{{ range first 10 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
