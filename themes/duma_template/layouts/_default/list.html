@@ -1,14 +1,26 @@
 {{ define "main" }}
 <main>
-	<h1>Blog</h1>
+	<h1>
+		{{- if eq .Kind "term" -}}#{{ .Title | lower }}
+		{{- else -}}{{ .Title }}
+		{{- end -}}
+	</h1>
 	{{ with .Content }}<div>{{ . }}</div>{{ end }}
+
+	{{ with .Site.Taxonomies.tags }}
+	<ul class="all-tags">
+		{{ range $name, $pages := . }}
+		<li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">#{{ $name }}</a></li>
+		{{ end }}
+	</ul>
+	{{ end }}
 
 	<ul class="pages-list">
 	{{ range .Pages }}
 		<li>
 			<time>{{ time.Format "02/01/2006" .PublishDate }}</time>
 			<div>
-				{{ if .Params.featured }}<span style="color: #ff4136; font-size: 11px; vertical-align: text-bottom">&#11044;</span> {{ end }}<a href="{{.RelPermalink}}">{{ .Title | safeHTML  }}</a>
+				{{ if .Params.featured }}<span class="featured-dot">&#11044;</span> {{ end }}<a href="{{.RelPermalink}}">{{ .Title | safeHTML  }}</a>
 				{{ with .Params.tags }}
 				<div class="list-tags">{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> {{ end }}</div>
 				{{ end }}
@@ -17,7 +29,4 @@
 	{{ end }}
 	</ul>
 </main>
-<aside>
-	{{ partial "sidebar.html" . }}
-</aside>
 {{ end }}

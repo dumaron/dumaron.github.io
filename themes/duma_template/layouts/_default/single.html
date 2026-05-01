@@ -1,22 +1,20 @@
 {{ define "main" }}
 <main>
   <article>
-    {{ with .Params.tags }}
-      <ul class="tags">
-        {{ range . }}
-        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a></li>
-        {{ end }}
-        </ul>
-    {{ end }}
-
-    <h1>{{ .Title | safeHTML }}</h1>
     <time>{{ .Date.Format "02/01/2006" }}</time>
+    <h1>{{ .Title | safeHTML }}</h1>
     <div class="content">
       {{ .Content }}
     </div>
   </article>
+
+  {{ with .Params.tags }}
+  <div class="tags-title">Tags</strong>
+  <ul class="tags">
+    {{ range . }}
+    <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a></li>
+    {{ end }}
+    </ul>
+  {{ end }}
 </main>
-<aside>
-{{ partial "sidebar.html" . }}
-</aside>
 {{ end }}

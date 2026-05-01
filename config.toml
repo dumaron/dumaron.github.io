@@ -11,7 +11,12 @@ enableRobotsTXT = true
 [params]
   mainSections = ["posts"]
 
+[imaging]
+  quality = 85
+
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     anchorLineNos = false
     codeFences = true

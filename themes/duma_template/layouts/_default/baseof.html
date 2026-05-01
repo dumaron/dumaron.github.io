@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
-	<title>{{ .Title | safeHTML }}</title>
+	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title | safeHTML }} | {{ .Site.Title }}{{ end }}</title>
 	{{ partial "meta" . }}
 	{{ $style := resources.Get "style-v2.css" }}
 	<link rel="stylesheet" href="{{ $style.Permalink }}">

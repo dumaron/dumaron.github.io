@@ -1,12 +1,46 @@
 {{ define "main" }}
-	<main>
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-		{{ range $paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
+	<main class="home">
+		{{ with .Content }}<div class="home-intro">{{ . }}</div>{{ end }}
+
+		<div class="home-columns">
+			<div class="home-featured">
+				{{ $featured := first 1 (where .Site.RegularPages.ByDate.Reverse "Params.featured" true) }}
+				{{ range $featured }}
+				<div class="featured-post">
+					<div class="section-title">FEATURED</div>
+					<a href="{{ .RelPermalink }}">
+						{{ $imgPath := .Params.preview_image }}
+						{{ if not $imgPath }}
+							{{ with .Params.images }}{{ $imgPath = index . 0 }}{{ end }}
+						{{ end }}
+						{{ with .Resources.GetMatch $imgPath }}
+						<img src="{{ .RelPermalink }}" alt="">
+						{{ end }}
+						<h3>{{ .Title }}</h3>
+					</a>
+					{{ with index .Params "quick intro" }}
+					<p>{{ . }}</p>
+					{{ end }}
+				</div>
+				{{ end }}
+			</div>
+
+			<div class="home-posts">
+				<div class="section-title">Latest blog posts</div>
+				<ul class="pages-list">
+				{{ range first 8 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+					<li>
+						<div>
+							{{ if .Params.featured }}<span class="featured-dot">&#11044;</span> {{ end }}<a href="{{.RelPermalink}}">{{ .Title | safeHTML  }}</a>
+							{{ with .Params.tags }}
+							<div class="list-tags">{{ range . }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a> {{ end }}</div>
+							{{ end }}
+						</div>
+					</li>
+				{{ end }}
+				</ul>
+				<a class="all-posts-link" href="/posts">All posts &rarr;</a>
+			</div>
+		</div>
 	</main>
-	<aside>
-	{{ partial "sidebar.html" . }}
-	</aside>
 {{ end }}
