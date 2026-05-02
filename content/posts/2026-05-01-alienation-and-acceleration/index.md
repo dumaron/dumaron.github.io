@@ -4,7 +4,7 @@ date: 2026-04-17
 publishdate: 2026-04-17
 draft: false
 featured: true
-preview_image: "the_vortex.jpg"
+preview_image: "alienazione-e-accelerazione-cover-wood.jpg"
 tags:
 - GTD
 - productivity

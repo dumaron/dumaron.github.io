@@ -1,4 +1,4 @@
-baseURL = "https://www.duma.website/"
+baseURL = "https://dumaron.github.io/"
 languageCode = "en-us"
 title = "Duma's website"
 theme = ["duma_template"]

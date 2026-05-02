@@ -2,8 +2,8 @@ name = "duma_template"
 license = "MIT"
 licenselink = "https://github.com/vimux/blank/blob/master/LICENSE"
 description = "The template for my website"
-homepage = "http://www.duma.website"
+homepage = "https://dumaron.github.io"
 
 [author]
   name = "Duma"
-  homepage = "http://www.duma.website"
+  homepage = "https://dumaron.github.io"
