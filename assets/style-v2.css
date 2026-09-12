@@ -286,7 +286,7 @@ h1 {
 
 code {
     border-radius: 3px;
-    font-family: "Berkeley Mono", "IBM Plex Mono", monospace;
+    font-family: "Jetbrains Mono", monospace;
     padding: 0 .2em;
     color: #111;
     background-color: #fff;
@@ -302,21 +302,78 @@ code {
     }
 }
 
+/* Block geometry follows Discourse's code blocks: 14px/1.3077 JetBrains
+   Mono, 12px padding, 4px radius. Sizing goes on `code`, not `pre` —
+   all the text lives inside <code>, so a font-size on the <pre> never
+   shows, and the bare `code` rule further down would win anyway. */
 .highlight {
     pre {
-        padding: 1rem;
+        padding: 12px;
         overflow-x: auto;
-        font-size: 15px;
+        border-radius: 4px;
     }
     code {
         padding: 0;
         border-radius: unset;
         background-color: unset;
         color: unset;
+        font-size: 14px;
+        line-height: 1.3076923077;
     }
 }
 
 .tags-title {
     font-weight: bold;
     margin: 4rem 0;
+}
+
+.callout {
+    margin: 2.5rem 0;
+
+    .callout-body > :first-child {
+        margin-top: 0;
+    }
+
+    .callout-body > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.callout-tag {
+    display: inline-block;
+    margin-bottom: .5rem;
+    padding: .25rem .6rem;
+    background: var(--callout-accent, var(--text-color));
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 13px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: #fff;
+}
+
+.callout-tag::before {
+    content: "\2193";
+    margin-right: .5em;
+    line-height: 1;
+    color: #fff;
+}
+
+.callout-visualization {
+    --callout-accent: #2a8a80;
+    font-style: italic;
+}
+
+code {
+    font-size: 13px;
+}
+
+pre {
+    line-height: 13px;
+}
+
+.callout-body {
+    margin-left: 2rem;
 }

@@ -1,5 +1,5 @@
 baseURL = "https://dumaron.github.io/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Duma's website"
 theme = ["duma_template"]
 [pagination]
@@ -29,5 +29,8 @@ enableRobotsTXT = true
     lineNumbersInTable = true
     noClasses = true
     noHl = false
-    style = 'base16-snazzy'
+    style = 'ashen'
     tabWidth = 4
+
+[security]
+  allowContent = ['^text/html$', '^text/markdown$']

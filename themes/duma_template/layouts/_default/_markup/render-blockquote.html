@@ -1,0 +1,32 @@
+{{- if eq .Type "alert" -}}
+  {{- /* Obsidian puts short callouts entirely on the `> [!type] …` line,
+         which Hugo exposes as AlertTitle with an empty Text. Treat that
+         as the body so both shapes render the same. */ -}}
+  {{- $title := .AlertTitle -}}
+  {{- $body  := .Text -}}
+  {{- if not (trim $body " \n") -}}
+    {{- $body = $title -}}
+    {{- $title = "" -}}
+  {{- end -}}
+
+  {{- /* The label's text, in order of preference:
+         1. the callout's own title — `> [!visualization] visualization exercise`
+         2. a default display name for the type
+         3. the bare type
+         Hugo alert types are one word, letters only, so a label with a
+         space has to be written as a title. */ -}}
+  {{- $labels := dict
+        "visualization" "Visualization exercise"
+  -}}
+  {{- $label := trim $title " \n" -}}
+  {{- if not $label -}}
+    {{- $label = index $labels .AlertType | default .AlertType -}}
+  {{- end -}}
+
+  <div class="callout callout-{{ .AlertType }}">
+    <span class="callout-tag">{{ $label }}</span>
+    <div class="callout-body">{{ $body }}</div>
+  </div>
+{{- else -}}
+  <blockquote>{{ .Text }}</blockquote>
+{{- end -}}
